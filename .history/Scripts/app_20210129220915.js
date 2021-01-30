@@ -6,21 +6,22 @@
 
 "use strict";
 //Contact Class
-
-class Contact {
+let Contact = /** @class */ (function () {
     // constructor
-    constructor(fullName, contactNumber, emailAddress) {
+    function Contact(fullName, contactNumber, emailAddress) {
         this.m_fullName = fullName;
         this.m_contactNumber = contactNumber;
         this.m_emailAddress = emailAddress;
     }
     // methods
-    toString() {
-        return ` Full Name       : ${this.m_fullName}
-                 \nContact Number: ${this.m_contactNumber}
-                 \nEmail Address : ${this.m_emailAddress}`;
-    }
-}
+    Contact.prototype.toString = function () {
+        return "Full Name: " + this.m_fullName +
+            "Contact Number: " +
+            this.m_contactNumber + "\nEmail Address: " + this.m_emailAddress + "\n";
+    };
+    return Contact;
+}());
+
 (function()
 {
     function displayHome()
