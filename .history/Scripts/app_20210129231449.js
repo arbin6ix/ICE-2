@@ -104,11 +104,9 @@
         sendButton.addEventListener("click", function(event){
             //event.preventDefault();
             
-
             let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
-              localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
-            
-            
+
+            localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
             
             
               
