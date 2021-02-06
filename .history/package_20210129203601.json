@@ -1,13 +1,13 @@
 {
-  "name": "assignment-1",
+  "name": "webd6201-w2021-ICE-2",
   "version": "0.01",
-  "description": "Assignment-1",
+  "description": "ICE 2",
   "main": "app.js",
   "repository": "https://github.com/arbin6ix/ICE-2",
-  "author": "<arbinchowdhury@hotmail.ca>)",
+  "author": "Arbin Chowdhury <arbinchowdhury@hotmail.ca>)",
   "license": "MIT",
   "dependencies": {
-    "@fontawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"

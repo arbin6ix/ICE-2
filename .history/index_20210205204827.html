@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./Content/app.css">
 </head>
-<body style="background-color:powderblue;">
+<body>
     <!-- Main Header -->
     <header>
         <!-- Main Navigation -->
@@ -19,18 +19,18 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent";>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home fa-lg"></i> Home Page</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="projects.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
+                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home fa-lg"></i> Home</a>
                   </li>
 
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="projects.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
                   </li>
 
                   <li class="nav-item">
@@ -40,8 +40,9 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="contact.html"><i class="fas fa-phone fa-lg"></i> Contact Us</a>
                   </li>
-
-                 
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-phone fa-lg"></i> Human Resources</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -49,15 +50,11 @@
     </header>
 
     <!-- Main Content -->
-    
+    <button style="background-color:azure" onclick='execute()'/>Run</button>
     <main class="container">
-      
-        <h1>Welcome to WEBD6201</h1>
-        <p>Welcome to the home page where you will have the option to navigate through the website.</p>
-        <img src="images/matrix.jpg">
-    
+        <h1>Welcome to WEBD 6201</h1>
+        <p id="paragraphOne"></p>
     </main>
-
 
     <!-- Main Footer -->
     <footer>
