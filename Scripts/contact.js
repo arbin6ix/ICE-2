@@ -1,6 +1,8 @@
 "use strict";
 // Contact Class
-class Contact {
+
+((core)=>{
+  class Contact {
     // getters and setters
     get FullName() 
     {
@@ -66,10 +68,22 @@ class Contact {
     toJSON()
     {
       return {
-        "fullName": this.FullName,
-        "contactNumber": this.ContactNumber,
-        "emailAddress": this.EmailAddress
+        "FullName": this.FullName,
+        "ContactNumber": this.ContactNumber,
+        "EmailAddress": this.EmailAddress
       }
+    }
+
+    /**
+     * This method takes a JSON data object and assigns the values to the Contact class properties
+     *
+     * @param {Object} data
+     */
+    fromJSON(data)
+    {
+      this.FullName = data.FullName;
+      this.ContactNumber = data.ContactNumber;
+      this.EmailAddress = data.EmailAddress;
     }
 
     /**
@@ -104,3 +118,9 @@ class Contact {
       this.EmailAddress = propertyArray[2];
     }
   }
+
+  core.Contact = Contact;
+
+})(core || (core={}));
+
+
